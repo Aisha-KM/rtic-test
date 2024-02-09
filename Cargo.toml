@@ -1,0 +1,22 @@
+[package]
+name = "rtic-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ballast-hpc-pac = { path = "../ballast-pac/ballast-hpc-pac" }
+panic-halt = "0.2.0"
+riscv = "0.11.0"
+riscv-rt = "0.12.1"
+
+[dependencies.rtic]
+path = "/home/aisha/ballast/rtic-on-ballast/rtic/rtic"
+version = "2.0.1"
+features = ["riscv-cva6-backend"]
+
+# [dependencies.rtic-monotonics]
+# path = "/home/aisha/ballast/rtic-on-ballast/rtic/rtic-monotonics"
+# version = "1.4.0"
+# features = ["cva6"]
